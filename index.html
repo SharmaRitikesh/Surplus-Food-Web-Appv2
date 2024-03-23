@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surplus Food  - Save Food, Save Lives</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" style="background: #5cb85c; color: white;">
+        <div class="logo" style="font-family: 'titlefont', 'Open Sans', sans-serif; color: #333;">Surplus Food</div>
+        <ul class="menu">
+            <li><a href="aboutus.html" style="color: #262323;">About</a></li>
+            <li><a href="working.html" style="color: #262323;">How It Works</a></li>
+            <li><a  href = "contact.html" style="color: #262323;">Contact</a></li>
+       <!-- <button onclick="showModal('signUpModal')">Register</button>href="#contact"-->
+        <li style=" transition: transform 0.3s ease; padding: 0 16px; transition: transform 300ms ease-in-out;"><a href="#signup" onclick="showModal('signUpModal')" class="button button-primary button-rounded button-flat signup" style="transform: scale(1); transition: transform 300ms ease-in-out; background: #fff; color: #262323;">Sign in</a></li>
+        <style>
+          .signup:hover {
+            transform: scale(1.05);
+          }
+        </style>
+
+       <!-- Sign Up Modal -->
+       <div id="signUpModal" class="modal" style="background: linear-gradient(135deg, #769bb3, #5cb85c);">
+         <div class="modal-content" style="background: rgba(255, 255, 255, 0.7); border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); padding: 20px;">
+           <h2 class="modal-heading" style="color: #404040; font-size: 24px; font-weight: 500;">Create a profile</h2>
+           <form action="./store.html" method="post" class="modal-form" style="display: flex; flex-direction: column; gap: 16px;">
+             <div class="input-group" style="display: flex; flex-direction: column; gap: 8px;">
+               <label for="newUsername" style="color: #404040; font-size: 16px; font-weight: 500;">Username or E-mail</label>
+               <input type="text" id="newUsername" name="newUsername" style="background: rgba(255, 255, 255, 0.8); border: none; border-radius: 5px; color: #404040; font-size: 16px; padding: 8px; width: 100%;">
+             </div>
+             <div class="input-group" style="display: flex; flex-direction: column; gap: 8px;">
+               <label for="newPassword" style="color: #404040; font-size: 16px; font-weight: 500;">Password</label>
+               <input type="password" id="newPassword" name="newPassword" style="background: rgba(255, 255, 255, 0.8); border: none; border-radius: 5px; color: #404040; font-size: 16px; padding: 8px; width: 100%;">
+             </div>
+             <div class="input-group" style="display: flex; justify-content: center;">
+               <button type="submit" class="button button-primary button-rounded button-flat" style="background: #6978c1; border-radius: 5px; color: white; padding: 12px 24px; transform: scale(1); transition: transform 300ms ease-in-out; cursor: pointer;" onclick="setTimeout(() => showModal('signUpModal'), 1000)">
+                 Submit
+               </button>
+             </div>
+              <div class="input-group" style="display: flex; justify-content: center;">
+               <span class="text-xs text-gray-light" style="color: #404040; font-size: 12px;">
+                 By signing up, you agree to our terms of service and privacy policy.
+               </span>
+             </div>
+           </form>
+         </div>
+       </div>
+    </div>
+
+        </ul>
+    </nav>
+    <script>
+        // Function to show modal
+        function showModal(modalId) {
+          var modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        }
+      </script>
+    <section class="hero" style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="flex-basis: 40%;">
+            <h1 style="color: black; background: linear-gradient(to right, black, #2ecc71); -webkit-background-clip: text; font-family: 'titlefont', 'Open Sans', sans-serif;">Welcome to Surplus Food</h1>
+            <p style="color: black; background: linear-gradient(to right, black, #2ecc71); -webkit-background-clip: text; font-family: 'subfont', 'Open Sans', sans-serif;">Join us in our mission to reduce food waste and help those in need.</p>
+            <button class="button" onclick="location.href='store.html'">Browse local restaurants</button>
+            <button class="button" onclick="location.href='donation.html'">Browse Food Donation Centre </button>
+        </div>
+        <div style="flex-basis: 60%; display: flex; justify-content: center;">
+            <div style="width: 45%;">
+                <img src="data.png" alt="Saved Food Graph" style="width: 100%;">
+            </div>
+            <div style="width: 45%;">
+                <img src="prediction.png" alt="Predicted Food Graph" style="width: 100%;">
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <img src="feature1.png" alt="Feature 1" >
+            <h3>Find Surplus Food</h3>
+            <p>Locate nearby places with surplus food available for pickup.</p>
+        </div>
+        <div class="feature">
+            <img src="feature2.png" alt="Feature 2">
+            <h3>Share Excess Food</h3>
+            <p>Share your excess food with local communities and organizations.</p>
+        </div>
+        <div class="feature">
+            <img src="feature3.png" alt="Feature 3">
+            <h3>Connect with Others</h3>
+            <p>Connect with like-minded individuals and organizations.</p>
+        </div>
+    </section>
+
+    
+    <footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
+
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h3 style="margin-bottom: 10px;">Stay Connected</h3>
+                <div style="display: flex; justify-content: center;">
+                    <a href="https://www.facebook.com/ritikeshrajgoh" style="text-decoration: none; color: #fff; margin-right: 10px;"><img src="/images/facebook.png" alt="Facebook" style="width: 30px; height: 30px;"></a>
+                    <a href="#" style="text-decoration: none; color: #fff; margin-right: 10px;"><img src="/images/twitter.png" alt="Twitter" style="width: 30px; height: 30px;"></a>
+                    <a href="https://www.instagram.com/_.ritikesh._" style="text-decoration: none; color: #fff;"><img src="/images/instagram.png" alt="Instagram" style="width: 30px; height: 30px;"></a>
+                </div>
+            </div>
+            <div>
+                <h3 style="margin-bottom: 10px;">Contact Us</h3>
+                <p>Email: ritikeshk2@gmail.com</p>
+                <p>Phone: +91 7970328312</p>
+            </div>
+        </div>
+        <hr style="margin-top: 20px; border-color: #fff;">
+        <p style="margin-top: 10px;">&copy; 2024 Surplus Food. All rights reserved.</p>
+    </div>
+
+</footer>
+
+</body>
+</html>
